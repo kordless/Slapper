@@ -1,0 +1,7 @@
+<Response>
+    <Pause length="1"/>
+    <Gather action="http://{{appengineurl}}/phone" numDigits="1">
+        <Play>http://{{appengineurl}}/static/welcome.mp3</Play>
+    </Gather>
+    <Redirect>http://{{appengineurl}}/phone?node=message</Redirect>
+</Response>

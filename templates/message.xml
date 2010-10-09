@@ -1,0 +1,4 @@
+<Response>
+        <Redirect>http://twimlets.com/voicemail?Email={{whofor}}@{{domain}}&amp;Message=http://{{appengineurl}}/static/message.mp3</Redirect>
+    <Hangup/>
+</Response>

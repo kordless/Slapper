@@ -1,0 +1,4 @@
+<Response>
+    <Play>http://{{appengineurl}}/static/nosale.mp3</Play>
+    <Redirect>http://{{appengineurl}}/phone?node=message&amp;for=sales</Redirect>
+</Response>

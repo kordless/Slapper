@@ -1,0 +1,4 @@
+<Response>
+    <Play>http://{{appengineurl}}/static/hankypanky.mp3</Play>
+    <Redirect>http://{{appengineurl}}/phone</Redirect>
+</Response>

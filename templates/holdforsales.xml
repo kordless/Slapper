@@ -1,0 +1,8 @@
+<Response>
+    <Play>http://{{appengineurl}}/static/holdforsales.mp3</Play>
+    {% for number in numbers %}
+       <Sms to="{{ number }}">Incoming call for sales from {{ calling_number }}.</Sms>
+    {% endfor %}
+    <Pause length="3"/> <Redirect>http://twimlets.com/simulring?{% for number in numbers %}PhoneNumbers%5B{{forloop.counter}}%5D={{number}}&amp;{% endfor %}FailUrl=http%3A%2F%2F{{appengineurl}}%2Fphone%3Fnode%3Dnosale&amp;Timeout=10</Redirect>
+</Response>
+

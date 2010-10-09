@@ -1,0 +1,4 @@
+<Response>
+    <Play>http://{{appengineurl}}/static/closedaccount.mp3</Play>
+    <Redirect>http://{{appengineurl}}/phone?node=message&amp;for=accounting</Redirect>
+</Response>

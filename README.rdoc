@@ -1,0 +1,15 @@
+= Slapper
+
+Slapper uses Google's AppEngine for hosting.  Here's a basic run down of getting it running:
+
+1.  Log into your AppEngine account and create a new app.
+2.  Check out Slapper and then go in and edit the app.yaml file and edit the application name to the app you just created.
+3.  Edit the main.py file and change the phone numbers to be the different department numbers for your company.
+4.  If you have a Loggly account, create a new HTTP input and then copy the input's URL into the log call.
+5.  Create the proper email aliases in your email system to receive voicemail links, or change the existing ones in main.py
+5.  Change the greetings stored in /static as needed.  If you like the voice, write a script and give it to me and I'll have the wife record you a new message.
+6.  Publish the app, and then go to Twilio and point your phone calls to this URL:
+
+  http://yourappname.appspot.com/phone
+
+That's about it!
